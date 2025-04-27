@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Мій Блог</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}"> <!-- Тут можна підключити свій CSS файл -->
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Ласкаво просимо на мій блог</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Головна</a></li>
+                    <li><a href="/about">Про мене</a></li>
+                    <li><a href="/contact">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="blog-posts">
+                <h2>Останні пости</h2>
+                
+                <article class="post">
+                    <h3><a href="/post/1">Заголовок першого поста</a></h3>
+                    <p class="post-meta">Опубліковано 27 квітня 2025</p>
+                    <p>Це вступ до першого поста на моєму блозі. Прочитати більше...</p>
+                </article>
+                
+                <article class="post">
+                    <h3><a href="/post/2">Заголовок другого поста</a></h3>
+                    <p class="post-meta">Опубліковано 26 квітня 2025</p>
+                    <p>Це вступ до другого поста на моєму блозі. Прочитати більше...</p>
+                </article>
+                
+                <!-- Додаткові пости можна додавати тут -->
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Мій блог. Усі права захищені.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
